@@ -1,0 +1,36 @@
+* {
+    font-family: serif;
+}
+
+body {
+    background-color: saddlebrown;
+    color: linen;
+    text-align: center;
+    margin: auto;
+    max-width: 750px;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 1.7;
+}
+
+button {
+    background-color: saddlebrown;
+    color: linen;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.choices {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.restart-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
