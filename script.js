@@ -49,7 +49,10 @@ const CHAPTERS = {
     43: 'The captain walks back towards the voice-horn and shouts a series of unintelligible commands into it. He then turns and smiles at you, his teeth white and straight and, unlike the goblins\', protruding from gums as pink as your own.</br>A few moments later, two fairly small gnomes come through the gates, bearing a fine silver tray with a china tea set between the two of them. One of the cups is human-sized, and this is filled for you. The wonderful aroma of tea leaves fills the chamber.</br>You sit cross-legged upon the ground and sip at the cup, relaxing quite a bit. How civil these gnomes are, you think.</br>',
     44: 'You\'re shown to a human-sized cot in a shadowy corner of the cavern, far from any side tunnels and obscured by layers and layers of net. "The gnomes won\'t know that you\'re here," Gu\'dal explains, "because if they find you, they\'ll take you away."</br>It\'s with that ominous warning that you begin your time in Haddlelint. The goblins here keep time by the brightness of their lamps; each is controlled by a central clockwork that shuts off or dims them at night, slowly bringing them to full-bright at noon. There are no other timepieces, but you learn to adjust.</br>You\'re woken early each morning by a now-playful Gu\'dal, who sometimes dumps water on your head, sometimes yells Goblin obscenities in your ear. You\'re led off down side tunnels—chosen so as to avoid gnomish observation—and she teaches you the rudiments of cane-fighting.</br>Despite outweighing her perhaps six times over, she wallops you soundly for three months before you are able to hold your own.</br>"Remember," she says one day as you practice, "if a rifle-gnome points her lightrifle at you, dodge left. Always left. It works more often than right."</br>Then, at noon each day, Gu\'dal leaves for her work shift and you hide in the main room. Most often, you play tiles with the goblins, who have dozens—if not hundreds—of drinking games that you explore.</br>But you find yourself drinking less than you had on the surface, certainly no more than two flasks a day. Which is not to say that the goblin sugar- mushroom brandy isn\'t good. It is. You just find yourself taken by this new sense of self, this image of yourself as a warrior.</br>And when Gu\'dal returns in the evenings, and the two of you take long walks through the tunnels, you find yourself more and more taken with her. Five months into your stay, you\'re physically fit, practically sober (no more than six shots in an evening!), and quite resoundingly in love with your mentor, who is almost two feet tall and has claws for fingernails.</br>She seems fond of you as well. No longer does she wake you with sharp jabs in the underside of your ribs. Rather, she licks your cheek, or bounces on your chest as though it were a trampoline. One morning she walks alongside you on stilts, then places her arm around your waist. You nearly faint with happiness.</br>Six months pass faster than you realized could be possible, and it is the last night before the horde gathers once more. You sit with Gu\'dal, perched on a net forty feet from the cavern floor, and stare at the stalactites above, imagining constellations in their patterns. You pull the silver ring out of your pocket, and consider what to do.</br>',
     45: 'You leap from your perch, and fortunately a small child breaks your fall. You spin about in all directions, everything a blur, and strike about randomly.</br>Screams fill the air and bring bloodlust into your eyes. The lion rends, your cane bludgeons, and soon all of your foes are subdued.</br>The lion peacefully laps at blood that pools on the floor, and A\'gog looks pleased. The bodies of almost a dozen gnomes are scattered about.</br>"We should get out of here," you say, because you\'re afraid you might vomit if you let yourself think about what you\'ve done.</br>"Oh, no. No, we won\'t be going anywhere. More will come, and more shall fall. The great evil city of Hak\'kal will be uprooted like… like if you were to cut the tendrils off a moss. We shall be victorious!"</br>Suddenly, three grown gnomes run into the room, wielding complex and bizarre rifles—adorned with crystals that spin and throw specks of light across the chamber—and wearing full-face helmets covered with darkened glass.</br>You don\'t think—you\'re far too drunk on adrenaline and booze for that— but instead rush them, your cane raised.</br>A purple beam shoots out and glances against your chest, stinging, but you bring your cane down on the faceplate of the gnome who shot you and break glass into his face, destroying his eyes. Soon you\'re joined by A\'gog and his lion, and a second guard falls. The third runs.</br>You make to chase the fleeing figure, but A\'gog stops you. "Let them run," he says, "let them tell the whole city that we are here."</br>"We\'re not going to win this, are we?"</br>"No," A\'gog says, "but they\'ll pay for my life of slavery. I thank you, stranger, for giving yourself to this."</br>"Yeah, well, I kinda thought I was hallucinating it all."</br>A\'gog nods. You pull a final flask from your back pocket, and you drain it.</br>More guards will come. And you will die. But at least you\'ll die in some</br>weird cavern far underground, miles from where you were born, on a grand and twisted adventure, with no ethics to speak of. At least you will die free.</br>Nevertheless, you will die.</br>',
-    46: ''
+    46: '"What do we have to work with?" you ask.</br>"We\'ve got the three of us," Sergei says. "And we\'ve got a lot of angry kabouters who may or may not help us."</br>"That\'s not a lot," A\'gog says.</br>"Well it\'s more than we had on our way here, now isn\'t it?" you reply. You\'ve come down from your adrenaline high, but the fervor of fomenting revolution has gone to your head, and nothing seems impossible.</br>"What better time to start putting up propaganda? The kabouters are going to be mad at the gnomes anyway," Sergei says.</br>"That\'s useless," A\'gog replies, "we don\'t need words, we need action.</br>And besides, I hate to break it to you, but you can\'t read. You\'re blind." You hear a slap in the dark, and realize that Sergei has struck A\'gog.</br>"We\'ve been reading and writing with our fingers since before you goblins figured out steam!"</br>"That\'s enough," you say, but no one is actually listening to you. "Alright, alright, I\'m sorry. I sometimes think stupid things, and</br>sometimes I say them. But still, we don\'t need words. We need action. You kabouters have got your own police force, yeah? That keeps tabs on the rebels and reports to Hak\'kal?"</br>"Yes," Sergei says, suddenly quite subdued.</br>"So we kill them. With poison. Poison is good for killing people who are bigger than you when you don\'t have guns."</br>"Maybe," Sergei says, "maybe."</br>',
+    47: 'You look at Gu\'dal and you look at the gnome. Never an unduly handsome man yourself, you reach the conclusion that, right or wrong, you will side with the goblins.</br>Gu\'dal catches your eye, and a smile crosses both of your faces simultaneously. Her sword comes free of her cane and before you\'ve time to think she has cut the hamstrings of one of the policemen.</br>You lunge forward, catching the gendarme closest to you in the chin with your club with a lucky blow. The gnome latches his jaws onto your right thigh and jabs at your left with what seems to be nothing other than a beartrap on a stick. You stumble, unable to control your legs, and collapse onto the ground. A cop leers above you and you swing wildly with your cane, smacking quietly into his grinning mouth.</br>He spits blood and you pass out.</br>When you come to, you\'re in a nearby alley with smelling salts under your nose. "You did great!" Gu\'dal tells you.</br>"I feel it," you say, lying. You look at your legs. Both have vicious wounds and you doubt you\'ll be running or fighting again soon. "I would have thought that gnomes wouldn\'t have such sharp teeth."</br>"They don\'t," Gu\'dal says, "they\'re herbivores. But they also eat rocks." With the help of your cane—no longer an affectation but a necessity—</br>you find your way to your feet. You can support your own weight, if barely. "Thank you for," Gu\'dal says, "you know–"</br>"It\'s nothing," you say. "Never liked cops anyway."</br>Gu\'dal grins and you find your way to the next tower slowly, but without further interruptions.</br>',
+    48: 'The captain shouts something through the voice-horn, then smiles at you. His teeth are white and straight, you realize, with gums as pink as your own. An herbivore\'s—or at least an omnivore\'s—smile. You can\'t help but find it somewhat comforting.</br>A few moments later the great city gates open and a gnome walks out bearing an opium pipe, which he or she—you are really having a hard time distinguishing gnomish genders—sets down in front of you and lights with a coal.</br>The flowery taste of opium floods into your lungs and you begin to relax. These gnomes can\'t be all bad, you decide. Until you remember your brother\'s lecture to you, about how western imperialists pushed poppy addiction upon the places they conquered as a way to keep the colonized subservient.</br>Still, you\'re glad to be smoking.</br>',
+    49: ''
 };
 
 // CHOICES
@@ -100,7 +103,11 @@ const CHOICES = {
     42: '<h2>The End</h2>',
     43: '<button class="choice" id="choice-43-58" value="58">Continue</button>',
     44: '<button class="choice" id="choice-44-57" value="57">Ask Gu\'dal to elope with you, afraid that if you fight you might lose another</button><button class="choice" id="choice-44-61" value="61">Offer the ring as a good luck charm and go valiantly towards battle and death</button>',
-    45: '<h2>The End</h2>'
+    45: '<h2>The End</h2>',
+    46: '<button class="choice" id="choice-46-62" value="62">Throw your weight behind the idea of disseminating propaganda throughout Underburg</button><button class="choice" id="choice-46-55" value="55">Support political assassination</button>',
+    47: '<button class="choice" id="choice-47-56" value="56">Continue</button>',
+    48: '<button class="choice" id="choice-48-58" value="58">Continue</button>',
+    49: ''
 };
 /* BUTTON TEMPLATE
 
@@ -116,6 +123,10 @@ const storyDiv = document.querySelector('.story-div');
 const choicesDiv = document.querySelector('.choices-div');
 const startBtn = document.querySelector('.start-button');
 const restartBtn = document.querySelector('.restart-button');
+const restartScreen = document.querySelector('.restart-screen');
+const yesBtn = document.querySelector('.yes-button');
+const noBtn = document.querySelector('.no-button');
+const overlay = document.querySelector('.overlay');
 
 
 function choiceEventListenerAdd() {
@@ -125,6 +136,19 @@ function choiceEventListenerAdd() {
     }
 }
 
+function makeChoice(input) {
+    let newStory = document.createElement('p'); // FIX LATER, REPEATING CODE
+    newStory.classList.add(`chapter-${input}`);
+    newStory.innerHTML = CHAPTERS[input];
+    storyDiv.appendChild(newStory); // UNTIL HERE
+
+    choicesDiv.innerHTML = '';
+    choicesDiv.innerHTML += CHOICES[input];
+
+    newStory.scrollIntoView(true);
+    
+    if (document.querySelector('.choice')) choiceEventListenerAdd()
+}
 
 startBtn.addEventListener('click', () => {
     let newStory = document.createElement('p'); // FIX LATER, REPEATING CODE
@@ -142,23 +166,20 @@ startBtn.addEventListener('click', () => {
 
 
 restartBtn.addEventListener('click', () => {
+    restartScreen.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+});
+
+yesBtn.addEventListener('click', () => {
     storyDiv.innerHTML = '';
     choicesDiv.innerHTML = '';
     startBtn.classList.remove('hidden');
     restartBtn.classList.add('hidden');
+    restartScreen.classList.add('hidden');
+    overlay.classList.add('hidden');
+});
+
+noBtn.addEventListener('click', () => {
+    restartScreen.classList.add('hidden');
+    overlay.classList.add('hidden');
 })
-
-
-function makeChoice(input) {
-    let newStory = document.createElement('p'); // FIX LATER, REPEATING CODE
-    newStory.classList.add(`chapter-${input}`);
-    newStory.innerHTML = CHAPTERS[input];
-    storyDiv.appendChild(newStory); // UNTIL HERE
-
-    choicesDiv.innerHTML = '';
-    choicesDiv.innerHTML += CHOICES[input];
-
-    newStory.scrollIntoView(true);
-    
-    if (document.querySelector('.choice')) choiceEventListenerAdd()
-}
