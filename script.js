@@ -124,11 +124,11 @@ const choicesDiv = document.querySelector('.choices-div');
 const startBtn = document.querySelector('.start-button');
 const restartBtn = document.querySelector('.restart-button');
 const restartScreen = document.querySelector('.restart-screen');
-const yesBtn = document.querySelector('.yes-button');
-const noBtn = document.querySelector('.no-button');
+const yesRestartBtn = document.querySelector('.yes-button');
+const noRestartBtn = document.querySelector('.no-button');
 const overlay = document.querySelector('.overlay');
 
-
+// adds an eventlistener to each new choice that is added
 function choiceEventListenerAdd() {
     const choiceBtn = document.querySelectorAll('.choice');
     for (let i = 0; i < choiceBtn.length; i++) {
@@ -136,25 +136,31 @@ function choiceEventListenerAdd() {
     }
 }
 
-function makeChoice(input) {
-    let newStory = document.createElement('p'); // FIX LATER, REPEATING CODE
+// adds a new chapter based on the choice button's value
+function addNewChapter(input) {
+    let newStory = document.createElement('p');
     newStory.classList.add(`chapter-${input}`);
     newStory.innerHTML = CHAPTERS[input];
-    storyDiv.appendChild(newStory); // UNTIL HERE
+    storyDiv.appendChild(newStory);
+    newStory.scrollIntoView(true);
+}
 
+// adds the new choices and the new chapter after making a choice
+function makeChoice(input) {
     choicesDiv.innerHTML = '';
     choicesDiv.innerHTML += CHOICES[input];
-
-    newStory.scrollIntoView(true);
-    
+    addNewChapter(input)
     if (document.querySelector('.choice')) choiceEventListenerAdd()
 }
 
+function hideRestartModal() {
+    restartScreen.classList.add('hidden');
+    overlay.classList.add('hidden');
+}
+
+
 startBtn.addEventListener('click', () => {
-    let newStory = document.createElement('p'); // FIX LATER, REPEATING CODE
-    newStory.classList.add('chapter-0');
-    newStory.innerHTML = CHAPTERS[0];
-    storyDiv.appendChild(newStory); // UNTIL HERE
+    addNewChapter(0)
 
     choicesDiv.innerHTML += CHOICES[0];
 
@@ -170,16 +176,12 @@ restartBtn.addEventListener('click', () => {
     overlay.classList.remove('hidden');
 });
 
-yesBtn.addEventListener('click', () => {
+yesRestartBtn.addEventListener('click', () => {
     storyDiv.innerHTML = '';
     choicesDiv.innerHTML = '';
     startBtn.classList.remove('hidden');
     restartBtn.classList.add('hidden');
-    restartScreen.classList.add('hidden');
-    overlay.classList.add('hidden');
+    hideRestartModal();
 });
 
-noBtn.addEventListener('click', () => {
-    restartScreen.classList.add('hidden');
-    overlay.classList.add('hidden');
-})
+noRestartBtn.addEventListener('click', hideRestartModal)
