@@ -30,7 +30,7 @@ button {
     background-color: saddlebrown;
     color: linen;
     font-size: 1.5em;
-    border-radius: 15px;
+    border-radius: 7px;
     margin: 5px;
 }
 
@@ -93,5 +93,6 @@ p {
     
     button {
         border-width: 7px;
+        border-radius: 15px;
     }
 }

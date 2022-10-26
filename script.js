@@ -239,7 +239,7 @@ const CHOICES = {
     99: '<h2>The End</h2>',
     100: '<button class="choice" id="choice-100-107" value="107">Throw Emile out of harm\'s way</button><button class="choice" id="choice-100-110" value="110">Step back and observe</button>',
     101: '<button class="choice" id="choice-101-106" value="106">Stay put long enough for Sergei to blow his nose enough for there to be light</button><button class="choice" id="choice-101-111" value="111">Reject the story as a baseless fancy and to hurry on so you might once again see daylight</button>',
-    102: '<button class="choice" id="choice-102-109" value="109"></button>',
+    102: '<button class="choice" id="choice-102-109" value="109">Continue</button>',
     103: '<h2>The End</h2>',
     104: '<h2>The End</h2>',
     105: '<button class="choice" id="choice-105-113" value="113">Tell the council, in all earnestness, that you intend to help find some kind of compromise between their interests and the interests of the goblins</button><button class="choice" id="choice-105-115" value="115">Tell the council everything you know of the golbins\' plans to attack Hak\'kal, such as the strange device in your clock tower</button><button class="choice" id="choice-105-117" value="117">Pretend to work with the council, but instead spy on them and report to the Aboveground</button>',
@@ -300,8 +300,8 @@ function addNewChapter(input) {
 function makeChoice(input) {
     choicesDiv.innerHTML = '';
     choicesDiv.innerHTML += CHOICES[input];
-    addNewChapter(input)
-    if (document.querySelector('.choice')) choiceEventListenerAdd()
+    addNewChapter(input);
+    if (document.querySelector('.choice')) choiceEventListenerAdd();
 }
 
 function hideRestartModal() {
@@ -311,11 +311,11 @@ function hideRestartModal() {
 
 // start button adds intro and first button to start the adventure, also makes restart button appear
 startBtn.addEventListener('click', () => {
-    addNewChapter(0)
+    addNewChapter(0);
 
     choicesDiv.innerHTML += CHOICES[0];
 
-    choiceEventListenerAdd()
+    choiceEventListenerAdd();
 
     startBtn.classList.add('hidden');
     restartBtn.classList.remove('hidden');
@@ -335,4 +335,4 @@ yesRestartBtn.addEventListener('click', () => {
     hideRestartModal();
 });
 
-noRestartBtn.addEventListener('click', hideRestartModal)
+noRestartBtn.addEventListener('click', hideRestartModal);
