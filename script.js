@@ -267,13 +267,6 @@ const CHOICES = {
     127: '<h2>The End</h2>',
     128: '<h2>The End</h2>'
 };
-/* BUTTON TEMPLATE
-
-<button class="choice" id="choice-" value=""></button>
-<button class="choice" id="choice-" value=""></button>
-<button class="choice" id="choice-" value=""></button>
-
-*/
 
 // FUNCTIONALITY
 
@@ -316,7 +309,7 @@ function hideRestartModal() {
     overlay.classList.add('hidden');
 }
 
-
+// start button adds intro and first button to start the adventure, also makes restart button appear
 startBtn.addEventListener('click', () => {
     addNewChapter(0)
 
@@ -328,7 +321,7 @@ startBtn.addEventListener('click', () => {
     restartBtn.classList.remove('hidden');
 });
 
-
+// shows a panel to confirm whether or not the player wants to restart the game
 restartBtn.addEventListener('click', () => {
     restartScreen.classList.remove('hidden');
     overlay.classList.remove('hidden');
