@@ -289,11 +289,9 @@ function choiceEventListenerAdd() {
 
 // adds a new chapter based on the choice button's value
 function addNewChapter(input) {
-    let newStory = document.createElement('p');
-    newStory.classList.add(`chapter-${input}`);
-    newStory.innerHTML = CHAPTERS[input];
-    storyDiv.appendChild(newStory);
-    newStory.scrollIntoView(true);
+    const html = `<p class="chapter-${input}">${CHAPTERS[input]}</p>`;
+    storyDiv.innerHTML += html;
+    document.querySelector(`.chapter-${input}`).scrollIntoView(true);
 }
 
 // adds the new choices and the new chapter after making a choice
