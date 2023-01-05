@@ -282,9 +282,9 @@ const overlay = document.querySelector('.overlay');
 // adds an eventlistener to each new choice that is added
 function choiceEventListenerAdd() {
     const choiceBtn = document.querySelectorAll('.choice');
-    choiceBtn.forEach(e =>
-        e.addEventListener('click', () => {
-            makeChoice(choiceBtn[i].value);
+    choiceBtn.forEach(btn =>
+        btn.addEventListener('click', () => {
+            makeChoice(btn.value);
         })
     );
 }
