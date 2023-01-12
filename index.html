@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="script.js"></script>
         <title>What Lies Beneath the Clock Tower</title>
     </head>
     <body>
         <main class="container">
             <h1>What Lies Beneath the Clock Tower</h1>
             <div class="story-div"></div>
-            <div class="choices-div"></div>
-            <button class="start-button" id="0" value="0">START GAME</button>
+            <div class="choices-div">
+                <button class="choice" id="0" value="0">START GAME</button>
+            </div>
             <button class="restart-button hidden">RESTART</button>
         </main>
-        <div class="restart-screen hidden">
+        <div class="restart-modal hidden">
             <h2>Are you sure you want to restart?</h2>
             <button class="yes-button">Yes</button>
             <button class="no-button">No</button>
         </div>
         <div class="overlay hidden"></div>
     </body>
-    <script src="script.js"></script>
 </html>

@@ -272,66 +272,58 @@ const CHOICES = {
 
 const storyDiv = document.querySelector('.story-div');
 const choicesDiv = document.querySelector('.choices-div');
-const startBtn = document.querySelector('.start-button');
 const restartBtn = document.querySelector('.restart-button');
-const restartScreen = document.querySelector('.restart-screen');
-const yesRestartBtn = document.querySelector('.yes-button');
-const noRestartBtn = document.querySelector('.no-button');
-const overlay = document.querySelector('.overlay');
 
-// adds an eventlistener to each new choice that is added
-function choiceEventListenerAdd() {
-    const choiceBtn = document.querySelectorAll('.choice');
-    choiceBtn.forEach(btn =>
-        btn.addEventListener('click', () => {
-            makeChoice(btn.value);
-        })
-    );
+function choiceHandler() {
+    choicesDiv.addEventListener('click', e => {
+        const clicked = e.target.closest('.choice');
+        const choice = clicked.value;
+
+        if (!clicked) return;
+        if (choice === '0') restartBtn.classList.remove('hidden');
+
+        choicesDiv.innerHTML = CHOICES[choice];
+
+        const newChapter = `<p class="chapter-${choice}">${CHAPTERS[choice]}</p>`;
+        storyDiv.insertAdjacentHTML('beforeend', newChapter);
+        document.querySelector(`.chapter-${choice}`).scrollIntoView({ behavior: 'smooth' });
+    });
 }
 
-// adds a new chapter based on the choice button's value
-function addNewChapter(input) {
-    storyDiv.innerHTML += `<p class="chapter-${input}">${CHAPTERS[input]}</p>`;
-    document.querySelector(`.chapter-${input}`).scrollIntoView(true);
+function restartButton() {
+    const restartModal = document.querySelector('.restart-modal');
+    const restartBtnYes = document.querySelector('.yes-button');
+    const restartBtnNo = document.querySelector('.no-button');
+    const overlay = document.querySelector('.overlay');
+
+    function hideModal() {
+        restartModal.classList.add('hidden');
+        overlay.classList.add('hidden');
+    }
+
+    restartBtn.addEventListener('click', () => {
+        restartModal.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+    });
+
+    restartBtnYes.addEventListener('click', () => {
+        storyDiv.innerHTML = '';
+        choicesDiv.innerHTML = CHOICES[0];
+        restartBtn.classList.add('hidden');
+        hideModal();
+    });
+
+    restartBtnNo.addEventListener('click', hideModal);
+
+    overlay.addEventListener('click', hideModal);
+
+    window.addEventListener('keydown', e => {
+        if (e.key === 'Escape') hideModal();
+    });
 }
 
-// adds the new choices and the new chapter after making a choice
-function makeChoice(input) {
-    choicesDiv.innerHTML = '';
-    choicesDiv.innerHTML += CHOICES[input];
-    addNewChapter(input);
-    if (document.querySelector('.choice')) choiceEventListenerAdd();
+function init() {
+    choiceHandler();
+    restartButton();
 }
-
-function hideRestartModal() {
-    restartScreen.classList.add('hidden');
-    overlay.classList.add('hidden');
-}
-
-// start button adds intro and first button to start the adventure, also makes restart button appear
-startBtn.addEventListener('click', () => {
-    addNewChapter(0);
-
-    choicesDiv.innerHTML += CHOICES[0];
-
-    choiceEventListenerAdd();
-
-    startBtn.classList.add('hidden');
-    restartBtn.classList.remove('hidden');
-});
-
-// shows a panel to confirm whether or not the player wants to restart the game
-restartBtn.addEventListener('click', () => {
-    restartScreen.classList.remove('hidden');
-    overlay.classList.remove('hidden');
-});
-
-yesRestartBtn.addEventListener('click', () => {
-    storyDiv.innerHTML = '';
-    choicesDiv.innerHTML = '';
-    startBtn.classList.remove('hidden');
-    restartBtn.classList.add('hidden');
-    hideRestartModal();
-});
-
-noRestartBtn.addEventListener('click', hideRestartModal);
+init();
